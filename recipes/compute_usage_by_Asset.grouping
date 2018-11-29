@@ -22,7 +22,7 @@
   "values": [
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "Time",
       "count": false,
@@ -32,7 +32,7 @@
       "type": "string",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "stddev": false,
@@ -40,7 +40,7 @@
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "Use",
       "count": false,
@@ -50,7 +50,7 @@
       "type": "string",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": false,
       "stddev": false,
@@ -93,6 +93,22 @@
         "columns": [
           {
             "name": "Asset",
+            "type": "string"
+          },
+          {
+            "name": "Time_min",
+            "type": "string"
+          },
+          {
+            "name": "Time_max",
+            "type": "string"
+          },
+          {
+            "name": "Use_min",
+            "type": "string"
+          },
+          {
+            "name": "Use_max",
             "type": "string"
           },
           {
