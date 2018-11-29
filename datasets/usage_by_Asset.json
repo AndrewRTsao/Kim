@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1543525979851
+    "lastModifiedOn": 1543532498540
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,6 +88,22 @@
     "columns": [
       {
         "name": "Asset",
+        "type": "string"
+      },
+      {
+        "name": "Time_min",
+        "type": "string"
+      },
+      {
+        "name": "Time_max",
+        "type": "string"
+      },
+      {
+        "name": "Use_min",
+        "type": "string"
+      },
+      {
+        "name": "Use_max",
         "type": "string"
       },
       {
