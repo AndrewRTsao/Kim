@@ -17,7 +17,7 @@ class MyPredictor(ClassificationPredictor):
     def predict(self, features_df):
  
         #get the location of the managed folder
-        handle = dataiku.Folder("model_web",project_key="PremeraListens")
+       # handle = dataiku.Folder("model_web",project_key="PremeraListens")
         path = handle.get_path()
         #load the pickled objects
         vect = joblib.load(os.path.join(path,'model_web.p'))
