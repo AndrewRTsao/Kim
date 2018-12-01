@@ -1,6 +1,10 @@
 
 from  dataiku.apinode.predict.predictor import ClassificationPredictor
 import pandas as pd
+import cPickle as pickle
+import os.path
+
+folder_path = folders[1]
 class MyPredictor(ClassificationPredictor):
     """The class for a classification Custom API node predictor"""
 
