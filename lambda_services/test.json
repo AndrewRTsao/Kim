@@ -3,7 +3,7 @@
   "endpoints": [
     {
       "modelType": "CLASSIFICATION",
-      "inputFolderRef": "JAKF1ZQu",
+      "inputFolderRef": "EnYkaqTP",
       "envSelection": {
         "envMode": "INHERIT"
       },
