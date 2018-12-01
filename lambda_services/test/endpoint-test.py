@@ -4,6 +4,7 @@ from dataiku.apinode.predict.predictor import ClassificationPredictor
 import pandas as pd
  
 import os
+import os.path
 from sklearn.externals import joblib
  
 class MyPredictor(ClassificationPredictor):
