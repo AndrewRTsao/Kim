@@ -12,7 +12,7 @@ class MyPredictor(ClassificationPredictor):
     def __init__(self, data_folder = None):
         """data_folder is the absolute path to the managed folder storing the data for the model
         (if any)"""
-        self.data_folder = folders[0]
+        self.data_folder = folders[1]
  
     def predict(self, features_df):
  
