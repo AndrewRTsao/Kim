@@ -1,7 +1,19 @@
 {
   "inputDatasetSmartName": "training",
   "script": {
-    "steps": [],
+    "steps": [
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "distance",
+          "expression": "Use_max - Use_min"
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
       "mode": "ALL"
@@ -39,7 +51,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -47,11 +61,11 @@
   "charts": [],
   "name": "Analyze training",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1543868554373
+    "lastModifiedOn": 1543869031244
   },
   "creationTag": {
     "versionNumber": 0,
