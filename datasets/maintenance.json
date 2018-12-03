@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1543525457095
+    "lastModifiedOn": 1543865047733
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,7 +90,7 @@
       },
       {
         "name": "Time",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Reason",
@@ -102,7 +102,7 @@
       },
       {
         "name": "Quantity",
-        "type": "string"
+        "type": "bigint"
       }
     ],
     "userModified": true
