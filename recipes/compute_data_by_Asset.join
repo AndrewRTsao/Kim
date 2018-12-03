@@ -6,37 +6,159 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "Asset",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Asset",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "Asset",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Asset",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "Asset",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Time_min",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Time_max",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Use_min",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Use_max",
+      "type": "string",
       "table": 0
     },
     {
       "name": "count",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "failure_bin",
+      "type": "bigint",
       "table": 1
+    },
+    {
+      "name": "R044_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R064_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R119_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R193_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R364_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R396_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R417_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R446_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R565_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R575_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R606_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R707_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R782_Quantity_sum",
+      "type": "bigint",
+      "table": 2
+    },
+    {
+      "name": "R783_Quantity_sum",
+      "type": "bigint",
+      "table": 2
     }
   ],
   "engineParams": {
@@ -83,7 +205,104 @@
       "autoSelectColumns": false,
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "index": 2
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Asset",
+            "type": "string"
+          },
+          {
+            "name": "Time_min",
+            "type": "string"
+          },
+          {
+            "name": "Time_max",
+            "type": "string"
+          },
+          {
+            "name": "Use_min",
+            "type": "string"
+          },
+          {
+            "name": "Use_max",
+            "type": "string"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          },
+          {
+            "name": "failure_bin",
+            "type": "bigint"
+          },
+          {
+            "name": "R044_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R064_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R119_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R193_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R364_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R396_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R417_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R446_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R565_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R575_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R606_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R707_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R782_Quantity_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "R783_Quantity_sum",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
