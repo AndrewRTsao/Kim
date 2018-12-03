@@ -1,0 +1,52 @@
+{
+  "schemaComputation": "ONLY_IF_NO_METADATA",
+  "identifierColumnsSelection": "EXPLICIT",
+  "modalitySlugification": "NONE",
+  "sortModalities": true,
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "explicitIdentifiers": [],
+  "otherColumns": [],
+  "pivots": [
+    {
+      "minOccLimit": 0,
+      "topnLimit": 0,
+      "globalCount": true,
+      "explicitValues": [],
+      "keyColumns": [
+        "Reason"
+      ],
+      "valueColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "customAggregates": []
+}
