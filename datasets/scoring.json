@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1543867777362
+    "lastModifiedOn": 1543868372945
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,92 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "Asset",
+        "type": "string"
+      },
+      {
+        "name": "Time_min",
+        "type": "string"
+      },
+      {
+        "name": "Time_max",
+        "type": "string"
+      },
+      {
+        "name": "Use_min",
+        "type": "string"
+      },
+      {
+        "name": "Use_max",
+        "type": "string"
+      },
+      {
+        "name": "count",
+        "type": "bigint"
+      },
+      {
+        "name": "failure_bin",
+        "type": "bigint"
+      },
+      {
+        "name": "R044_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R064_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R119_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R193_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R364_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R396_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R417_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R446_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R565_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R575_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R606_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R707_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R782_Quantity_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "R783_Quantity_sum",
+        "type": "bigint"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
