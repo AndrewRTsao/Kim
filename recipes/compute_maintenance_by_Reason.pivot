@@ -33,20 +33,40 @@
       }
     }
   },
-  "explicitIdentifiers": [],
+  "explicitIdentifiers": [
+    "Asset"
+  ],
   "otherColumns": [],
   "pivots": [
     {
+      "valueLimit": "TOP_N",
       "minOccLimit": 0,
-      "topnLimit": 0,
-      "globalCount": true,
+      "topnLimit": 20,
+      "globalCount": false,
       "explicitValues": [],
       "keyColumns": [
         "Reason"
       ],
-      "valueColumns": []
+      "valueColumns": [
+        {
+          "last": false,
+          "max": false,
+          "column": "Quantity",
+          "count": false,
+          "sum": true,
+          "concat": false,
+          "type": "bigint",
+          "$agg": "sum",
+          "countDistinct": false,
+          "min": false,
+          "avg": false,
+          "stddev": false,
+          "first": false
+        }
+      ]
     }
   ],
   "computedColumns": [],
-  "customAggregates": []
+  "customAggregates": [],
+  "enginesPreferences": {}
 }
