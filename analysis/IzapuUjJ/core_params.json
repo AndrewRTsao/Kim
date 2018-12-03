@@ -20,6 +20,27 @@
           "expression": "Time_max - Time_min"
         },
         "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "FindReplace",
+        "params": {
+          "output": "",
+          "normalization": "EXACT",
+          "matching": "SUBSTRING",
+          "stopAfterFirstMatch": false,
+          "mapping": [
+            {
+              "to": "0"
+            }
+          ],
+          "appliesTo": "PATTERN",
+          "columns": [],
+          "appliesToPattern": "^R.*_Quantity_sum$"
+        },
+        "metaType": "PROCESSOR",
         "preview": true,
         "disabled": false,
         "alwaysShowComment": false
@@ -76,7 +97,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1543869235551
+    "lastModifiedOn": 1543869821412
   },
   "creationTag": {
     "versionNumber": 0,
