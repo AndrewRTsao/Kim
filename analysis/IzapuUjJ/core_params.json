@@ -41,7 +41,38 @@
           "appliesToPattern": "^R.*_Quantity_sum$"
         },
         "metaType": "PROCESSOR",
-        "preview": true,
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "ColumnRenamer",
+        "params": {
+          "renamings": [
+            {
+              "from": "count",
+              "to": "times_measured"
+            },
+            {
+              "from": "Time_min",
+              "to": "age_initial"
+            },
+            {
+              "from": "Time_max",
+              "to": "age_last_known"
+            },
+            {
+              "from": "Use_min",
+              "to": "distance_initial"
+            },
+            {
+              "from": "Use_max",
+              "to": "distance_last_known"
+            }
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
         "disabled": false,
         "alwaysShowComment": false
       }
@@ -97,7 +128,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1543869821412
+    "lastModifiedOn": 1543869967465
   },
   "creationTag": {
     "versionNumber": 0,
