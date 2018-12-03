@@ -9,6 +9,17 @@
           "expression": "Use_max - Use_min"
         },
         "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "time_in_service",
+          "expression": "Time_max - Time_min"
+        },
+        "metaType": "PROCESSOR",
         "preview": true,
         "disabled": false,
         "alwaysShowComment": false
@@ -65,7 +76,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1543869031244
+    "lastModifiedOn": 1543869235551
   },
   "creationTag": {
     "versionNumber": 0,
