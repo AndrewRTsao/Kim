@@ -1,7 +1,7 @@
 {
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
-  "name": "Prediction (RANDOM_FOREST_CLASSIFICATION) on training",
+  "name": "Random Forest Prediction",
   "activeVersion": "1544111418981",
   "conditionalOutputs": [],
   "lastExportedFrom": "A-PREDICTIVEMAINTENANCE-IzapuUjJ-JokVL35Q-s1-pp1-m1",
@@ -651,11 +651,11 @@
     "predictionDisplayCharts": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1544111425534
+    "lastModifiedOn": 1546448173553
   },
   "creationTag": {
     "versionNumber": 0,
