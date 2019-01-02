@@ -1,7 +1,7 @@
 {
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
-  "name": "Random Forest Prediction",
+  "name": "Random Forest Prediction rename",
   "activeVersion": "1544111418981",
   "conditionalOutputs": [],
   "lastExportedFrom": "A-PREDICTIVEMAINTENANCE-IzapuUjJ-JokVL35Q-s1-pp1-m1",
@@ -651,11 +651,11 @@
     "predictionDisplayCharts": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1546448173553
+    "lastModifiedOn": 1546448934666
   },
   "creationTag": {
     "versionNumber": 0,
