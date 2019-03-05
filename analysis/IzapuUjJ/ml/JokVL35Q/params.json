@@ -2,7 +2,10 @@
   "predictionType": "BINARY_CLASSIFICATION",
   "targetVariable": "failure_bin",
   "weight": {
-    "weightMethod": "NO_WEIGHTING"
+    "weightMethod": "CLASS_WEIGHT"
+  },
+  "calibration": {
+    "calibrationMethod": "NO_CALIBRATION"
   },
   "guessPolicy": "DEFAULT",
   "splitParams": {
@@ -79,7 +82,29 @@
     "preprocessingFitSampleRatio": 1.0,
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
-      "age_initial": {
+      "Asset": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "NONE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "NONE",
+        "role": "REJECT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text"
+        },
+        "autoReason": "REJECT_IDENTIFIER",
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "R044_Quantity_sum": {
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
@@ -100,7 +125,7 @@
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
-      "R606_Quantity_sum": {
+      "R064_Quantity_sum": {
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
@@ -116,33 +141,54 @@
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
-      "distance": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning"
         },
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
       "R119_Quantity_sum": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "R193_Quantity_sum": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "R364_Quantity_sum": {
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
@@ -205,70 +251,7 @@
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
-      "R575_Quantity_sum": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
       "R446_Quantity_sum": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
-      "R044_Quantity_sum": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
-      "R193_Quantity_sum": {
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
@@ -310,7 +293,49 @@
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
-      "time_in_service": {
+      "R575_Quantity_sum": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "R606_Quantity_sum": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "R707_Quantity_sum": {
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
@@ -349,65 +374,6 @@
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
-      "failure_bin": {
-        "generate_derivative": false,
-        "impute_constant_value": 0.0,
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "TARGET",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
-      "R707_Quantity_sum": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
-      "R364_Quantity_sum": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
       "R783_Quantity_sum": {
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
@@ -429,7 +395,7 @@
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
-      "R064_Quantity_sum": {
+      "age_initial": {
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
@@ -445,27 +411,6 @@
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
-      "distance_last_known": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning"
         },
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
@@ -492,29 +437,7 @@
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
-      "Asset": {
-        "category_handling": "DUMMIFY",
-        "missing_handling": "NONE",
-        "missing_impute_with": "MODE",
-        "dummy_clip": "MAX_NB_CATEGORIES",
-        "cumulative_proportion": 0.95,
-        "min_samples": 10,
-        "max_nb_categories": 100,
-        "max_cat_safety": 200,
-        "dummy_drop": "NONE",
-        "role": "REJECT",
-        "type": "CATEGORY",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "Text"
-        },
-        "autoReason": "REJECT_IDENTIFIER",
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
-      "times_measured": {
+      "distance": {
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
@@ -529,7 +452,7 @@
         "state": {
           "userModified": false,
           "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
+          "recordedMeaning": "DoubleMeaning"
         },
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
@@ -551,6 +474,86 @@
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "distance_last_known": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "failure_bin": {
+        "generate_derivative": false,
+        "impute_constant_value": 0.0,
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "TARGET",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "time_in_service": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "times_measured": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
         },
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
@@ -581,6 +584,7 @@
     }
   },
   "modeling": {
+    "skipExpensiveReports": false,
     "random_forest_regression": {
       "enabled": false,
       "n_estimators": [
@@ -1125,10 +1129,10 @@
     "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
     "sparkRepartitionNonHDFS": 1,
     "pipelineAllowStart": true,
-    "pipelineAllowMerge": true
+    "pipelineAllowMerge": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT"
   },
   "sparkCheckpoint": "NONE",
-  "skipExpensiveReports": false,
   "predictionDisplayScript": {
     "steps": [],
     "maxProcessedMemTableBytes": -1,
@@ -1243,6 +1247,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
