@@ -1,5 +1,5 @@
 {
-  "predictionType": "BINARY_CLASSIFICATION",
+  "predictionType": "MULTICLASS",
   "targetVariable": "failure_bin",
   "weight": {
     "weightMethod": "CLASS_WEIGHT"
@@ -1105,7 +1105,6 @@
       "evaluationMetric": "ROC_AUC",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
-      "thresholdOptimizationMetric": "F1",
       "costMatrixWeights": {
         "tpGain": 1.0,
         "tnGain": 0.0,
