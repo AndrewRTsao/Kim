@@ -1,4 +1,5 @@
 {
+  "name": "APITestService",
   "endpoints": [
     {
       "modelRef": "HdIZC9FG",
