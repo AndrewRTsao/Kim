@@ -1,0 +1,31 @@
+{
+  "type": "jupyter",
+  "params": {
+    "notebookSmartName": "Predict failure_bin in training",
+    "exportTimestamp": 0,
+    "loadLast": true
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Predict failure_bin in training (2019-03-25 10:08)",
+  "dashboardCreationId": "ZsXNs29",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1553551718468
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1553551718468
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -3,7 +3,27 @@
     {
       "id": "WDRKZks",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 4,
+              "height": 5
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showCode": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "sjFNPIr",
+            "insightType": "jupyter",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +33,11 @@
   "name": "Default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1543520291557
+    "lastModifiedOn": 1553551718470
   },
   "creationTag": {
     "versionNumber": 0,
@@ -27,6 +47,7 @@
     "lastModifiedOn": 1543520291557
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
