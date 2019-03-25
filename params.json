@@ -1,7 +1,17 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "Predict failure_bin in training",
+          "objectType": "JUPYTER_NOTEBOOK"
+        },
+        "modes": [
+          "READ"
+        ]
+      }
+    ]
   },
   "exposedObjects": {
     "objects": []
@@ -72,6 +82,7 @@
     },
     "sparkEngineCreationSettings": {
       "useGlobal": true,
+      "executionEngine": "SPARK_SUBMIT",
       "useGlobalMetastore": false
     },
     "impalaEngineCreationSettings": {
@@ -124,6 +135,10 @@
       "impala": {
         "active": true
       },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
       "python": {}
     },
     "displayedState": {
@@ -139,11 +154,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1546460016330
+    "lastModifiedOn": 1553551718353
   },
   "creationTag": {
     "versionNumber": 0,
@@ -154,6 +169,7 @@
   },
   "shortDesc": "The project *Predictive Maintenance* was created by Andrew Tsao on Nov 29th 2018",
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": [
       {
