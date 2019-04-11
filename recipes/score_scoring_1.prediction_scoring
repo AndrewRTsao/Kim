@@ -11,7 +11,7 @@
   "gpuAllowGrowth": false,
   "outputProbaPercentiles": false,
   "outputProbabilities": true,
-  "forceOriginalEngine": false,
+  "forceOriginalEngine": true,
   "forcedClassifierThreshold": 0,
   "batchSize": 100,
   "overrideModelSpecifiedThreshold": false,
