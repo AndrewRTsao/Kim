@@ -10,11 +10,29 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "scoring_neural",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
   "exposedObjects": {
-    "objects": []
+    "objects": [
+      {
+        "type": "DATASET",
+        "localName": "scoring_neural",
+        "rules": [
+          {
+            "targetProject": "DATA_DISCOVERY",
+            "appearOnFlow": true
+          }
+        ]
+      }
+    ]
   },
   "projectType": "REGULAR",
   "owner": "admin",
@@ -154,11 +172,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1553551718353
+    "lastModifiedOn": 1555604426164
   },
   "creationTag": {
     "versionNumber": 0,
